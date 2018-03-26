@@ -24,7 +24,7 @@ class Tag
      */
     public function getName()
     {
-        return $this->name;
+        return (string)$this->name;
     }
 
     /**
