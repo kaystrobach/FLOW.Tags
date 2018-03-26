@@ -1,8 +1,4 @@
-# Easy FLOW package which provides Tagging for objects
-
-```$php
-IfHasTagViewHelper
-```
+# Small FLOW package which provides Tagging for objects
 
 ```$html
 {namespace ks=KayStrobach/Tags/ViewHelpers}
@@ -26,3 +22,25 @@ The Tagging is provided via
 having all these helper you can add tagging in the matter of minutes
 
 Currently there is no interface for adding tags. Please use the DB.
+
+## How to make your Entity tagable
+
+```$php
+
+use KayStrobach\Tags\Domain\Model\TagableTrait;
+
+/**
+ * @Flow\Entity
+ */
+class Entity implements TagableInterface
+{
+
+    use TagableTrait;
+    
+    public function __construct()
+    {
+        $this->initTags();
+    }
+}
+
+```
