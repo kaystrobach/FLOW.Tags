@@ -1,6 +1,7 @@
 {
     "description": "Add description here",
     "type": "neos-package",
+    "license": "MIT",
     "require": {
         "typo3/flow": "3.3.*"
     },
