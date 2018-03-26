@@ -5,13 +5,14 @@
 
 namespace KayStrobach\Tags\Domain\Model;
 
-
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
+use Doctrine\ORM\Mapping as ORM;
 
 trait TagableTrait
 {
     /**
+     * @ORM\ManyToMany
      * @var \Doctrine\Common\Collections\Collection<\KayStrobach\Tags\Domain\Model\Tag>
      */
     protected $tags;
