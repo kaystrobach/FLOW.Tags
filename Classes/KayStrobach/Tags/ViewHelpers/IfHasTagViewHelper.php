@@ -25,7 +25,7 @@ class IfHasTagViewHelper extends AbstractConditionViewHelper
      */
     public function render($object, $tag)
     {
-        if ($tag instanceof Tag)
+        if (!($tag instanceof Tag))
         {
             $tag = new Tag();
             $tag->setName($tag);
