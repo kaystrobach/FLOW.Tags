@@ -25,6 +25,11 @@ class IfHasTagViewHelper extends AbstractConditionViewHelper
      */
     public function render($object, $tag)
     {
+        if ($tag instanceof Tag)
+        {
+            $tag = new Tag();
+            $tag->setName($tag);
+        }
         if ($object instanceof TagableInterface) {
             if ($object->hasTag($tag)) {
                 return $this->renderThenChild();
