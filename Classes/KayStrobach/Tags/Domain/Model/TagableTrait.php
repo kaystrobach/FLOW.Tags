@@ -76,7 +76,7 @@ trait TagableTrait
         }
         foreach ($this->tags as $tagItem)
         {
-            if ($tagItem === (string)$tag) {
+            if ((string)$tagItem === (string)$tag) {
                 return true;
             }
         }
