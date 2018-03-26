@@ -2,7 +2,7 @@
     "description": "Add description here",
     "type": "neos-package",
     "require": {
-        "typo3/flow": "*"
+        "typo3/flow": "3.3.*"
     },
     "name": "kaystrobach/tags",
     "autoload": {
