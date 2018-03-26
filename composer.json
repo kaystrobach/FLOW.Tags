@@ -1,0 +1,18 @@
+{
+    "description": "Add description here",
+    "type": "neos-package",
+    "require": {
+        "typo3/flow": "*"
+    },
+    "name": "kaystrobach/tags",
+    "autoload": {
+        "psr-0": {
+            "KayStrobach\\Tags": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "KayStrobach.Tags"
+        }
+    }
+}
