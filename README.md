@@ -4,6 +4,19 @@
 IfHasTagViewHelper
 ```
 
+```$html
+{namespace ks=KayStrobach/Tags/ViewHelpers}
+
+<ks:ifHasTag object="{object}" tag="{tag}">
+    <f:then>
+        ...
+    </f:then>
+    <f:else>
+        ...
+    </f:else>
+</ks:ifHasTag>
+```
+
 The Tagging is provided via
 
 * an Tag Model
