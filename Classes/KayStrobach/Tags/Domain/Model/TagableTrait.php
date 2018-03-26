@@ -74,9 +74,9 @@ trait TagableTrait
         if ($this->tags->contains($tag)) {
             return true;
         }
-        foreach ($this->tags as $tagItem)
-        {
-            if ((string)$tagItem === (string)$tag) {
+        /** @var Tag $tagItem */
+        foreach ($this->tags as $tagItem) {
+            if ($tagItem->getName() === $tag->getName()) {
                 return true;
             }
         }
