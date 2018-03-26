@@ -17,14 +17,17 @@ class Tag
      * @Flow\Identity()
      * @var string
      */
-    protected $name;
+    protected $name = '';
 
     /**
      * @return string
      */
     public function getName()
     {
-        return (string)$this->name;
+        if (\is_string($this->name)) {
+            return $this->name;
+        }
+        return '';
     }
 
     /**
