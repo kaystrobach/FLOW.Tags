@@ -2,7 +2,7 @@
 namespace KayStrobach\Tags\ViewHelpers;
 
 /*
- * This file is part of the TYPO3.Fluid package.
+ * This file is part of the Neos.FluidAdaptor package.
  *
  * (c) Contributors of the Neos Project - www.neos.io
  *
@@ -13,7 +13,7 @@ namespace KayStrobach\Tags\ViewHelpers;
 
 use KayStrobach\Tags\Domain\Model\Tag;
 use KayStrobach\Tags\Domain\Model\TagableInterface;
-use TYPO3\Fluid\Core\ViewHelper\AbstractConditionViewHelper;
+use Neos\FluidAdaptor\Core\ViewHelper\AbstractConditionViewHelper;
 
 
 class IfHasTagViewHelper extends AbstractConditionViewHelper
