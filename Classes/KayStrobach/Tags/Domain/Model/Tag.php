@@ -20,22 +20,124 @@ class Tag
     protected $name = '';
 
     /**
+     * @var string
+     */
+    protected $scope = '';
+
+    /**
+     * @var bool
+     */
+    protected $available = true;
+
+    /**
+     * @var string
+     */
+    protected $shortHand = '';
+
+    /**
+     * @var string
+     */
+    protected $iconIdentifier = '';
+
+    /**
+     * @var string
+     */
+    protected $colorCode = '';
+
+    /**
      * @return string
      */
-    public function getName()
+    public function getName(): string
     {
-        if (\is_string($this->name)) {
-            return $this->name;
-        }
-        return '';
+        return $this->name ?? '';
     }
 
     /**
-     * @param string $name
+     * @param string|null $name
      */
-    public function setName($name)
+    public function setName(string $name = null): void
     {
-        $this->name = $name;
+        $this->name = $name ?? '';
+    }
+
+    /**
+     * @return string
+     */
+    public function getScope(): string
+    {
+        return $this->scope ?? '';
+    }
+
+    /**
+     * @param string|null $scope
+     */
+    public function setScope(string $scope = null): void
+    {
+        $this->scope = $scope ?? '';
+    }
+
+    /**
+     * @return bool
+     */
+    public function isAvailable(): bool
+    {
+        return $this->available ?? false;
+    }
+
+    /**
+     * @param bool $available
+     */
+    public function setAvailable(bool $available = null): void
+    {
+        $this->available = $available ?? false;
+    }
+
+    /**
+     * @return string
+     */
+    public function getShortHand(): string
+    {
+        return $this->shortHand ?? '';
+    }
+
+    /**
+     * @param string|null $shortHand
+     */
+    public function setShortHand(string $shortHand = null): void
+    {
+        $this->shortHand = $shortHand ?? '';
+    }
+
+    /**
+     * @return string
+     */
+    public function getIconIdentifier(): string
+    {
+        return $this->iconIdentifier ?? '';
+    }
+
+    /**
+     * @param string|null $iconIdentifier
+     */
+    public function setIconIdentifier(string $iconIdentifier = null): void
+    {
+        $this->iconIdentifier = $iconIdentifier ?? '';
+    }
+
+    /**
+     * @return string
+     */
+    public function getColorCode(): string
+    {
+        return $this->colorCode ?? '';
+    }
+
+    /**
+     * @param string|null $colorCode
+     */
+    public function setColorCode(string $colorCode = null): void
+    {
+        $this->colorCode = $colorCode ?? '';
     }
 
     /**
