@@ -3,7 +3,7 @@
     "type": "neos-package",
     "license": "MIT",
     "require": {
-        "neos/flow": "~6.0"
+        "neos/flow": "~6.0 || ~7 || ~8"
     },
     "name": "kaystrobach/tags",
     "autoload": {
