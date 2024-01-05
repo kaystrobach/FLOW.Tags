@@ -3,7 +3,6 @@ namespace Neos\Flow\Persistence\Doctrine\Migrations;
 
 use Doctrine\Migrations\AbstractMigration;
 use Doctrine\DBAL\Schema\Schema;
-use Doctrine\DBAL\Migrations\AbortMigrationException;
 
 /**
  * Auto-generated Migration: Please modify to your needs! This block will be used as the migration description if getDescription() is not used.
@@ -22,7 +21,6 @@ class Version20230208141030 extends AbstractMigration
     /**
      * @param Schema $schema
      * @return void
-     * @throws AbortMigrationException
      */
     public function up(Schema $schema): void
     {
@@ -35,7 +33,6 @@ class Version20230208141030 extends AbstractMigration
     /**
      * @param Schema $schema
      * @return void
-     * @throws AbortMigrationException
      */
     public function down(Schema $schema): void
     {
