@@ -60,6 +60,24 @@ class Tag
         $this->name = $name ?? '';
     }
 
+    public function getNameScope(): string
+    {
+        if (!str_contains($this->getName(), '::')) {
+            return '';
+        }
+        list($group, $name) = explode('::', $this->getName(), 2);
+        return $group;
+    }
+
+    public function getNameWithoutScope(): string
+    {
+        if (!str_contains($this->getName(), '::')) {
+            return $this->getName();
+        }
+        list($group, $name) = explode('::', $this->getName(), 2);
+        return $name;
+    }
+
     /**
      * @return string
      */
