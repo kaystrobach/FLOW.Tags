@@ -13,6 +13,14 @@ use Neos\Flow\Persistence\Repository;
  */
 class TagRepository extends Repository
 {
+    /**
+     * @var array
+     */
+    protected $defaultOrderings = [
+        'scope' => QueryInterface::ORDER_ASCENDING,
+        'name' => QueryInterface::ORDER_ASCENDING
+    ];
+    
     public function findByScope(string $scope)
     {
         $q = $this->createQuery();
