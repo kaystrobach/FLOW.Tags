@@ -7,6 +7,7 @@ namespace KayStrobach\Tags\Domain\Repository;
 
 use Neos\Flow\Annotations as Flow;
 use Neos\Flow\Persistence\Repository;
+use Neos\Flow\Persistence\QueryInterface;
 
 /**
  * @Flow\Scope("singleton")
