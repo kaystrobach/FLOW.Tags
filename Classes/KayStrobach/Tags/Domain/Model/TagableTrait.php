@@ -36,7 +36,7 @@ trait TagableTrait {
      * @param \Doctrine\Common\Collections\Collection<\KayStrobach\Tags\Domain\Model\Tag> $tags
      * @return void
      */
-    public function setTags(Collection $tags)
+    public function setTags(Collection $tags): void
     {
         $this->tags = $tags;
     }
@@ -45,7 +45,7 @@ trait TagableTrait {
      * @param Tag $tag
      * @return void
      */
-    public function addTag(Tag $tag)
+    public function addTag(Tag $tag): void
     {
         $this->initTags();
         if ($this->hasTag($tag)) {
@@ -58,7 +58,7 @@ trait TagableTrait {
      * @param Tag $tag
      * @return void
      */
-    public function removeTag(Tag $tag)
+    public function removeTag(Tag $tag): void
     {
         $this->initTags();
         $this->tags->removeElement($tag);
