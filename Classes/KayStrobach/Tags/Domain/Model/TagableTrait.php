@@ -9,8 +9,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
-trait TagableTrait
-{
+trait TagableTrait {
     /**
      * @ORM\ManyToMany
      * @var \Doctrine\Common\Collections\Collection<\KayStrobach\Tags\Domain\Model\Tag>
@@ -69,14 +68,14 @@ trait TagableTrait
      * @param Tag $tag
      * @return bool
      */
-    public function hasTag(Tag $tag)
+    public function hasTag(Tag $tag): bool
     {
         if ($this->tags->contains($tag)) {
             return true;
         }
         /** @var Tag $tagItem */
         foreach ($this->tags as $tagItem) {
-            if ($tagItem->getName() === $tag->getName()) {
+            if ((string)$tagItem === (string)$tag) {
                 return true;
             }
         }
