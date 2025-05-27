@@ -20,23 +20,23 @@ interface TagableInterface
      * @param \Doctrine\Common\Collections\Collection<\KayStrobach\Tags\Domain\Model\Tag> $tags
      * @return void
      */
-    public function setTags(Collection $tags);
+    public function setTags(Collection $tags): void;
 
     /**
      * @param Tag $tag
      * @return void
      */
-    public function addTag(Tag $tag);
+    public function addTag(Tag $tag): void;
 
     /**
      * @param Tag $tag
      * @return void
      */
-    public function removeTag(Tag $tag);
+    public function removeTag(Tag $tag): void;
 
     /**
      * @param Tag $tag
      * @return bool
      */
-    public function hasTag(Tag $tag);
+    public function hasTag(Tag $tag): bool;
 }
