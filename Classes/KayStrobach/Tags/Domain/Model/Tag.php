@@ -55,7 +55,7 @@ class Tag
     /**
      * @param string|null $name
      */
-    public function setName(string $name = null): void
+    public function setName(?string $name = null): void
     {
         $this->name = $name ?? '';
     }
@@ -89,7 +89,7 @@ class Tag
     /**
      * @param string|null $scope
      */
-    public function setScope(string $scope = null): void
+    public function setScope(?string $scope = null): void
     {
         $this->scope = $scope ?? '';
     }
@@ -105,7 +105,7 @@ class Tag
     /**
      * @param bool $available
      */
-    public function setAvailable(bool $available = null): void
+    public function setAvailable(?bool $available = null): void
     {
         $this->available = $available ?? false;
     }
@@ -121,7 +121,7 @@ class Tag
     /**
      * @param string|null $shortHand
      */
-    public function setShortHand(string $shortHand = null): void
+    public function setShortHand(?string $shortHand = null): void
     {
         $this->shortHand = $shortHand ?? '';
     }
@@ -137,7 +137,7 @@ class Tag
     /**
      * @param string|null $iconIdentifier
      */
-    public function setIconIdentifier(string $iconIdentifier = null): void
+    public function setIconIdentifier(?string $iconIdentifier = null): void
     {
         $this->iconIdentifier = $iconIdentifier ?? '';
     }
@@ -153,7 +153,7 @@ class Tag
     /**
      * @param string|null $colorCode
      */
-    public function setColorCode(string $colorCode = null): void
+    public function setColorCode(?string $colorCode = null): void
     {
         $this->colorCode = $colorCode ?? '';
     }

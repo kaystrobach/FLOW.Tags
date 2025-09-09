@@ -21,7 +21,7 @@ class TagRepository extends Repository
         'scope' => QueryInterface::ORDER_ASCENDING,
         'name' => QueryInterface::ORDER_ASCENDING
     ];
-    
+
     public function findByScope(string $scope)
     {
         $q = $this->createQuery();
