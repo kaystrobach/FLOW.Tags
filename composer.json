@@ -8,7 +8,7 @@
     "name": "kaystrobach/tags",
     "autoload": {
         "psr-4": {
-            "KayStrobach\\Tags": "Classes/"
+            "KayStrobach\\Tags\\": "Classes/"
         }
     },
     "extra": {
