@@ -7,7 +7,7 @@
     },
     "name": "kaystrobach/tags",
     "autoload": {
-        "psr-0": {
+        "psr-4": {
             "KayStrobach\\Tags": "Classes/"
         }
     },
